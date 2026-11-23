@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mblf"
+version = "1.0.0"
+description = "A Bayesian latent factors approach for multimodal functional data (BMLF)"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "xarray", "cmdstanpy>=1.2"]
+
+[tool.setuptools]
+packages = ["mblf"]
+
+[tool.setuptools.package-data]
+mblf = ["stan/*.stan"]
